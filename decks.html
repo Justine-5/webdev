@@ -25,18 +25,18 @@
         <h2><a href="home.html" class="logo">Stuby</a></h2>
       </div>
       
-      <form method="get" action="home.html" class="search search-desktop">
-        <input type="search" placeholder="Search Decks">
-        <button type="submit" name="search">
+      <form method="get" action="decks.html" class="search search-desktop">
+        <input type="search"  name="search" placeholder="Search Decks">
+        <button type="submit">
           <img src="icons/search.svg" alt="">
         </button>
       </form>
       <button class="profile">JC</button>
     </div>
     
-    <form method="get" action="home.html" class="search search-mobile">
-      <input type="search" placeholder="Search Decks">
-      <button type="submit" name="search">
+    <form method="get" action="decks.html" class="search search-mobile">
+      <input type="search" placeholder="Search Decks" name="search">
+      <button type="submit">
         <img src="icons/search.svg" alt="">
       </button>
     </form>
@@ -72,7 +72,7 @@
       </section>
   
       <section id="btnCloseMenu" class="bottom-sidebar">
-        <div class="sidebar-items selected-nav">
+        <div class="sidebar-items">
           <img src="icons/logout.svg" alt="">
           <p class="aside-labels">Logout</p>
         </div>
@@ -83,13 +83,39 @@
 
    <main>
     <section class="all-decks">
-      <h2>All Decks</h2>
+
+      <div class="add-deck">
+        <h2>All Decks</h2>
+        <button>+ Add Deck</button>
+      </div>
+
+
       <div class="cards-wrapper">
         <a href="" class="card-link">
           <div class="card">
             <div class="card-img"></div>
             <div class="card-info">
               <h3>General Math asdfa asdff sadf dsd asdf asdf sadf dsa</h3>
+              <p>3 cards</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="decks.html" class="card-link">
+          <div class="card">
+            <div class="card-img"></div>
+            <div class="card-info">
+              <h3>General Math</h3>
+              <p>3 cards</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="card-link">
+          <div class="card">
+            <div class="card-img"></div>
+            <div class="card-info">
+              <h3>General Math</h3>
               <p>3 cards</p>
             </div>
           </div>

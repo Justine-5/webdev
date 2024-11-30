@@ -1,4 +1,22 @@
-.all-decks h2 {
+.add-deck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: .8em;
 }
 
+.add-deck button {
+  padding: .75em;
+  font-weight: 800;
+  border: none;
+  border-radius: .5em;
+  background-color: var(--main);
+  color: white;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.add-deck button:hover {
+  opacity: .9;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+}
