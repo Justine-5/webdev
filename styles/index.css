@@ -1,0 +1,167 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  min-height: 100svh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+
+.wrapper {
+  background-color: white;
+}
+
+.logo {
+  font-family: "Rammetto One";
+  color: rgb(40, 77, 65);
+  font-size: 2rem;
+}
+
+.login {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1em;
+  padding: 1em 2em;
+}
+
+.greetings {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.greetings h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 3rem;
+}
+
+.greetings p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-box label {
+  display: block;
+  margin: .5em 0;
+  font-weight: 800;
+}
+
+.input-box input{
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: none;
+  border-radius: .5em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+  background-color: rgb(245, 245, 245);
+}
+
+.forgot {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  font-size: .9em;
+  color: rgb(70, 48, 210);
+}
+
+.login-button {
+  width: 100%;
+  padding: 1em;
+  margin-top: 2em;
+  border: none;
+  border-radius: .5em;
+  color: white;
+  background-color: rgb(13, 71, 73);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 200ms ease-in-out;
+}
+
+.login-button:hover {
+  opacity: 99%;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.signup{
+  margin-top: .5em;
+  width: 100%;
+  padding: .8em;
+  border: none;
+  border-radius: .5em;
+  color: rgb(172, 172, 172);
+  background-color: white;
+  border: 1px solid rgb(172, 172, 172);;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.signup:hover {
+  color: white;
+  background-color: rgb(234, 234, 234);
+}
+
+.login-image {
+  display: none;
+}
+
+
+@media (min-width: 1000px) {
+  body {
+    background-color: rgb(178, 208, 224);
+  }
+  
+  .wrapper {
+    align-self: center;
+    background-color: white;
+    width: 95%;
+    min-height: 90vh;
+    max-width: 1200px;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
+  }
+
+  .login-image {
+    display: block;
+    flex: 1;
+    height: auto;
+    background: url('../bg2.jpg');
+    background-size: cover;
+    border-radius: .5em;
+    margin: 1em;
+  }
+
+  .login {
+    width: 50%;
+    padding: 2em;
+  }
+}

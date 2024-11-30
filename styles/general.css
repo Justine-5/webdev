@@ -1,0 +1,298 @@
+:root {
+  --main: rgb(45, 65, 83);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100svh;
+  overflow-x: hidden;
+}
+
+nav {
+  position: sticky;
+  padding: .8em;
+  min-height: 4em;
+  top: 0;
+  background: var(--main);
+  border-radius: 0 0 .5em .5em;
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.2);
+}
+
+aside {
+  position: fixed;
+  max-height: 100svh;
+  max-width: 300px;
+  inset: 0 0 0 0;
+  background: var(--main);
+  box-shadow: .1rem .1em .2rem .1rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 1em 0 0;
+  transform: translateX(-120%);
+  transition: transform 150ms ease-out;
+  z-index: 100;
+}
+
+.mobile-overlay {
+  position: fixed;
+  display: block;
+  max-height: 100svh;
+  inset: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visible {
+  transform: translateX(0%);
+}
+
+.side-logo-menu {
+  padding: .8em;
+}
+
+.section-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-wrapper section {
+  padding: 1em 0;
+}
+
+.sidebar-items {
+  display: flex;
+  align-items: center;
+  padding: .5em;
+  margin: 0 .5em;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  border-radius: .5em;
+  cursor: pointer;
+  transition: 50ms ease-in-out;
+  gap: 1em;
+}
+
+.sidebar-items:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: .9;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.selected-nav {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.red {
+  background-color: red;
+}
+
+.sidebar-items img {
+  width: 1.75em;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo {
+  font-family: "Rammetto One";
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.profile {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  border: none;
+  background-size: contain;
+  background: white;
+  font-weight: 600;
+}
+
+.menu {
+  background: url(../icons/menu.svg) no-repeat;
+  background-size: contain;
+  width: 2em;
+  height: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.search-desktop {
+  display: none;
+}
+
+.search-mobile {
+  width: 100%;
+  display: flex;
+}
+
+.search {
+  transition: all 50ms ease-in-out;
+}
+
+.search input {
+  padding: .6em;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: .6em 0 0 .6em;
+  outline: none;
+}
+
+.search button {
+  padding: .6em;
+  width: 3em;
+  border: none;
+  border-radius: 0 .6em .6em 0;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.search img {
+  width: 100%;
+}
+
+.search:focus-within {
+  border: 2px solid black;
+  border-radius: .7em;
+}
+
+@media (min-width:800px) {
+  body {
+    background-color: var(--main);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "navbar navbar" "sidebar main";
+    grid-template-rows: auto 1fr;
+  }
+
+  nav {
+    grid-area: navbar;
+    border-radius: 0;
+    padding: 0 .8em;
+    display: flex;
+    align-items: center;
+  }
+
+  .top-nav {
+    width: 100%;
+    margin: 0;
+    gap: 2em;
+  }
+
+  aside {
+    display: flex;
+    grid-area: sidebar;
+    position: sticky;
+    height: calc(100svh - 4em);
+    top: 4em;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transform: translateX(0%);
+  }
+
+  .sidebar-items img {
+    width: 1.5em;
+  }
+
+  .top-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+  }
+
+  .section-wrapper {
+    padding: 0;
+  }
+
+  .no-scroll {
+    overflow: auto;
+  }
+
+  .mobile-overlay {
+    display: none;
+  }
+
+  .side-logo-menu {
+    display: none;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  .search-desktop {
+    width: 100%;
+    max-width: 50em;
+    display: block;
+    flex: 1;
+    display: flex;
+  }
+
+  .search-mobile {
+    display: none;
+  }
+
+  .aside-labels {
+    min-width: 100px;
+  }
+
+  .aside-labels-hidden {
+    display: none;
+  }
+}
+
+main {
+  padding: 1em;
+  background-color: white;
+}
+
+section {
+  padding: 1em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

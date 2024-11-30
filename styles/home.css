@@ -1,0 +1,87 @@
+.greetings{
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: .5em;
+  background-color: var(--main);
+  color: white;
+  padding: .2em;
+  border-radius: .15em;
+  text-align: center;
+}
+
+.streak-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.streaks {
+  background-color: var(--main);
+  padding: .5em;
+  width: 100%;
+  max-width: 25em;
+  border-radius: .5em;
+  color: white;
+}
+
+.streak-top {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: .3em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: .5em;
+}
+
+.streak-top img {
+  width: 3rem;
+}
+
+.login-streak h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login-streak p {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.streak-bottom {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: .5em;
+  gap: .5em;
+}
+
+.day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.day p {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: .3em;
+}
+
+.streak-fill {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 3em;
+  border-radius: .5em;
+}
+
+.filled {
+  background-color: white;
+}
+
+
+.recents h2 {
+  margin-bottom: .8em;
+}
+
