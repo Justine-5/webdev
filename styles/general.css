@@ -19,6 +19,10 @@ img {
   font-style: italic;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }

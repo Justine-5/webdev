@@ -1,4 +1,97 @@
-.deck-name h2 {
+.deck-description {
+  background-color: var(--main);
+  border-radius: .5em;
+}
+
+.description {
+  width: 75%;
+  max-width: 40em;
+  color: white;
+}
+
+.description h2 {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 600;
+  margin-bottom: .25em;
+}
+
+.description p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.card-number {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.top-buttons-container {
+  display: flex;
+  align-items: start;
+  gap: .25em;
+}
+
+.top-buttons-container button {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: .5em;
+  border: none;
+  border-radius: 1em;
+  transition: 200ms ease-in-out;
+}
+
+.top-buttons-container button:hover {
+  opacity: .9;
+}
+
+.top-buttons-container img {
+  width: 2em;
+}
+
+.bottom-buttons-conatiner {
+  display: flex;
+  gap: .5em;
+  justify-content: space-between;
+}
+
+.bottom-buttons {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .35em;
+  padding: .5em;
+  border: none;
+  border-radius: .5em;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: 200ms ease-in-out;
+}
+
+.study-review {
+  display: flex;
+  justify-content: end;
+  gap: .5em;
+  flex: 1;
+}
+
+.study,
+.review {
+  flex: 1;
+  max-width: 12.5em;
+}
+
+.bottom-buttons:hover {
+  opacity: .9;
+}
+
+.bottom-buttons img {
+  width: 2em;
+  height: 2em;
 }
