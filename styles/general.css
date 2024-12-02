@@ -167,10 +167,6 @@ aside {
   display: flex;
 }
 
-.search {
-  transition: all 50ms ease-in-out;
-}
-
 .search input {
   padding: .6em;
   flex: 1;
@@ -192,11 +188,6 @@ aside {
 
 .search img {
   width: 100%;
-}
-
-.search:focus-within {
-  border: 2px solid black;
-  border-radius: .7em;
 }
 
 @media (min-width:800px) {

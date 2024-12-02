@@ -66,6 +66,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 10em);
     gap: 1em;
+    justify-content: center;
   }
   
   .card-link {
@@ -85,7 +86,6 @@
     width: 100%;
     max-width: 10em;
     aspect-ratio: 1 / 1.25;
-    margin: 0 auto;
   }
   
   .card-info {
