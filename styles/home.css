@@ -27,10 +27,7 @@
   display: flex;
   align-items: center;
   gap: 1em;
-  margin-bottom: .3em;
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: .5em;
+  padding: 1em 1em 0 1em;
 }
 
 .streak-top img {
@@ -52,8 +49,6 @@
   padding: 1em;
   display: flex;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: .5em;
   gap: .5em;
 }
 

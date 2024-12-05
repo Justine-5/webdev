@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="styles/study.css">
+  <link rel="stylesheet" href="styles/review.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="card-info.html">
+      <div class="back">
+        <img src="icons/back-black.svg" alt="">
+        <h2>General Math sdhfgaskjdfhjdashfkjsdahfjkhsadjk</h2>
+      </div>
+    </a>
+    
+    <div class="card">
+      <button>haha heheeh hihih hohoh lasdfjklksdjf laskjdflakdsfj lfdkgj lkasjdf slakdfjl lksdfj</button>
+    </div>
+
+    <div class="answers hide">
+      <button class="forgot">
+        <p class="answer-name">Forgot</p>
+        <p class="next-review">0d</p>
+      </button>
+      <button class="hard">
+        <p class="answer-name">Hard</p>
+        <p class="next-review">2d</p>
+      </button>
+      <button class="good">
+        <p class="answer-name">Good</p>
+        <p class="next-review">6d</p>
+      </button>
+      <button class="easy">
+        <p class="answer-name">Easy</p>
+        <p class="next-review">15d</p>
+      </button>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+      </div>
+      <p>5 / 15</p>
+    </div>
+
+    <script defer>
+      const answers = document.querySelector('.answers');
+      const card = document.querySelector('.card');
+  
+      card.addEventListener("click", () => {
+        answers.classList.toggle("hide")
+        card.classList.toggle("pad-onclick")
+      });
+      
+    </script>
+  </main>
+</body>
+</html>

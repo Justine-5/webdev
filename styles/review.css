@@ -1,0 +1,57 @@
+.answers {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+  width: calc(100% - 4em);
+  max-width: 50em;
+  margin: 1em auto;
+}
+
+.answers button {
+  flex: 1;
+  border-radius: 1.25em;
+  border: none;
+  padding: .5em;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+.pad-onclick {
+  padding: 4em 0 2em 0;
+}
+
+.answers button:hover {
+  box-shadow: .1em .1em .5em .1em rgba(0, 0, 0, 0.1);
+}
+
+.next-review {
+  font-weight: 500;
+}
+
+.answer-name {
+  font-weight: 700;
+}
+
+.forgot {
+  color: red;
+}
+
+.hard {
+  color: orange;
+}
+
+.good {
+  color: green;
+}
+
+.easy {
+  color: blue;
+}
+
+.answers button:hover {
+  
+}

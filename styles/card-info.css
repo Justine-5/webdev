@@ -1,6 +1,7 @@
 .deck-description {
   background-color: var(--main);
   border-radius: .5em;
+  max-width: 60em;
 }
 
 .description {
