@@ -1,0 +1,125 @@
+:root {
+  --main: rgb(45, 65, 83);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+html, main {
+  min-height: 100svh;
+}
+
+main {
+  padding: 1em .5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  max-width: 20em;
+  border-radius: 1em;
+}
+
+.back:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.back img {
+  width: 2em;
+}
+
+.back h2 {
+  color: black;
+  font-size: 1.25rem;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card {
+  flex: 1;
+  padding: 6em 0;
+  max-width: 60em;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+.card button {
+  width: 90%;
+  background-color: var(--main);
+  border-radius: 2em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  transition: 150ms ease-in-out;
+}
+
+.card button:hover {
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  padding: .5em;
+  margin: 5em 0;
+  background-color: rgba(45, 65, 83, 0.7);
+  display: flex;
+  transition: 150ms ease-in-out;
+}
+
+.card a:hover {
+  opacity: .9;
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.2);
+}
+
+.left {
+  border-radius: 1em 0 0 1em;
+}
+
+.right {
+  border-radius: 0 1em 1em 0;
+}
+
+.card img {
+  width: 2em;
+  margin: auto 0;
+  
+}
+
+.progress p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.progress-bar,
+.progress-bar-fill {
+  height: 2vh;
+  max-width: 60em;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: rgba(45, 65, 83, 0.5);
+  background-blend-mode: color;
+  border-radius: 1em;
+  overflow: hidden;
+  margin: 0 auto .5em auto;
+}
+
+.progress-bar-fill {
+  width: 50%;
+  background-color: var(--main);
+}
