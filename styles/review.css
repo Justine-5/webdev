@@ -4,7 +4,7 @@
   gap: .5em;
   width: calc(100% - 4em);
   max-width: 50em;
-  margin: 1em auto;
+  margin: 0 auto;
 }
 
 .answers button {
@@ -14,14 +14,6 @@
   padding: .5em;
   cursor: pointer;
   transition: 200ms ease-in-out;
-}
-
-.hide {
-  display: none;
-}
-
-.pad-onclick {
-  padding: 4em 0 2em 0;
 }
 
 .answers button:hover {
@@ -53,5 +45,5 @@
 }
 
 .answers button:hover {
-  
+  border: 1px solid orange;
 }

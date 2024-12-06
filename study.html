@@ -24,7 +24,22 @@
       <a class="left" href="">
         <img src="icons/back.svg" alt="">
       </a>
-      <button>haha heheeh hihih hohoh lasdfjklksdjf laskjdflakdsfj lfdkgj lkasjdf slakdfjl lksdfj</button>
+      <div class="background">
+        <div class="card-holder">
+          <div class="front-card">
+            <p>Pythagoras lore</p>
+          </div>
+          <div class="back-card">
+            <div class="front-text">
+              <p>Pythagoras</p>
+              <hr>
+            </div>
+            <div class="back-text">
+              <p>Greek Mathematician</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <a class="right" href="">
         <img src="icons/next.svg " alt="">
       </a>
@@ -36,6 +51,13 @@
       </div>
       <p>5 / 15</p>
     </div>
+
+    <script defer>
+      const card = document.querySelector('.card-holder');
+      card.addEventListener("click", () => {
+        card.classList.toggle("card-click")
+      });
+    </script>
   </main>
 </body>
 </html>

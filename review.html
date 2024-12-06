@@ -22,26 +22,40 @@
     </a>
     
     <div class="card">
-      <button>haha heheeh hihih hohoh lasdfjklksdjf laskjdflakdsfj lfdkgj lkasjdf slakdfjl lksdfj</button>
-    </div>
-
-    <div class="answers hide">
-      <button class="forgot">
-        <p class="answer-name">Forgot</p>
-        <p class="next-review">0d</p>
-      </button>
-      <button class="hard">
-        <p class="answer-name">Hard</p>
-        <p class="next-review">2d</p>
-      </button>
-      <button class="good">
-        <p class="answer-name">Good</p>
-        <p class="next-review">6d</p>
-      </button>
-      <button class="easy">
-        <p class="answer-name">Easy</p>
-        <p class="next-review">15d</p>
-      </button>
+      <div class="background">
+        <div class="card-holder">
+          <div class="front-card">
+            <p>asdfasdf</p>
+          </div>
+          <div class="back-card">
+            <div class="front-text">
+              <p>Pythagoras</p>
+              <hr>
+            </div>
+            <div class="back-text">
+              <p>Greek Mathematician</p>
+            </div>
+            <div class="answers">
+              <button class="forgot" onclick="doSomething()">
+                <p class="answer-name">Forgot</p>
+                <p class="next-review">0d</p>
+              </button>
+              <button class="hard" onclick="doSomething()">
+                <p class="answer-name">Hard</p>
+                <p class="next-review">2d</p>
+              </button>
+              <button class="good" onclick="doSomething()">
+                <p class="answer-name">Good</p>
+                <p class="next-review">6d</p>
+              </button>
+              <button class="easy" onclick="doSomething()">
+                <p class="answer-name">Easy</p>
+                <p class="next-review">15d</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="progress">
@@ -52,14 +66,20 @@
     </div>
 
     <script defer>
+      const card = document.querySelector('.card-holder');
+      const front = document.querySelector('.front-card');
+      const back = document.querySelector('.back-card');
       const answers = document.querySelector('.answers');
-      const card = document.querySelector('.card');
-  
-      card.addEventListener("click", () => {
-        answers.classList.toggle("hide")
-        card.classList.toggle("pad-onclick")
+
+      card.addEventListener("click", (e) => {
+        if (!e.target.closest('.answers')) { 
+          card.classList.toggle("card-click");
+        }
       });
-      
+
+      function doSomething() {
+        console.log("affddsfafd")
+      }
     </script>
   </main>
 </body>
