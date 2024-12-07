@@ -100,6 +100,7 @@ main {
   height: 100%;
   backface-visibility: hidden;
   cursor: pointer;
+  overflow-y: auto;
 }
 
 .back-card {
@@ -145,6 +146,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.front-text,
+.back-text {
+  overflow-y: auto;
 }
 
 .back-text p {
