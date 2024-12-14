@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const addButton = document.querySelector(".add-button");
+    const addButton = document.querySelector(".showOverlay");
     const overlay = document.querySelector(".add-deck-overlay");
     const cancelButton = document.getElementById("cancel");
     const form = document.getElementById("overlay-form");

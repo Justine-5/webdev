@@ -79,6 +79,16 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
+.error {
+  width: 100%;
+  padding: 1em;
+  border-radius: .5em;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.896);
+  font-size: 1rem;
+  margin: 1em auto 0 auto;
+}
+
 .forgot {
   text-align: right;
 }
@@ -146,7 +156,6 @@ a {
     border-radius: 1em;
     display: flex;
     justify-content: center;
-    padding: 1em;
     box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
   }
 
@@ -156,8 +165,7 @@ a {
     height: auto;
     background: url('../bg2.jpg');
     background-size: cover;
-    border-radius: .5em;
-    margin: 1em;
+    border-radius: .5em 0 0 .5em;
   }
 
   .login {

@@ -1,5 +1,5 @@
 :root {
-  --main: rgb(45, 65, 83);
+  --main: rgb(28, 52, 72);
 }
 
 *, *::before, *::after {
@@ -40,6 +40,7 @@ nav {
   background: var(--main);
   border-radius: 0 0 .5em .5em;
   box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
 aside {

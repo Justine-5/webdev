@@ -49,7 +49,6 @@
   padding: 1em;
   display: flex;
   justify-content: space-between;
-  gap: .5em;
 }
 
 .day {
@@ -57,6 +56,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: .25em;
+  border-radius: .5em;
 }
 
 .day p {
@@ -72,7 +73,12 @@
 }
 
 .filled {
-  background-color: white;
+  background-color: rgb(208, 230, 43);
+}
+
+.current-day {
+  outline: .1em solid rgba(255, 255, 255, 0.58);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 

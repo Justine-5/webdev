@@ -1,7 +1,16 @@
-.deck-description {
+.section {
   background-color: var(--main);
   border-radius: .5em;
   max-width: 60em;
+  margin: .8em auto;
+  color: white;
+}
+
+.deck-description {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .description {
@@ -44,6 +53,8 @@
   border: none;
   border-radius: 1em;
   transition: 200ms ease-in-out;
+  display: inline-flex;
+  cursor: pointer;
 }
 
 .top-buttons-container button:hover {
@@ -52,9 +63,10 @@
 
 .top-buttons-container img {
   width: 2em;
+  height: auto;
 }
 
-.bottom-buttons-conatiner {
+.bottom-buttons-container {
   display: flex;
   gap: .5em;
   justify-content: space-between;
@@ -75,17 +87,55 @@
   transition: 200ms ease-in-out;
 }
 
-.study-review {
-  display: flex;
-  justify-content: end;
-  gap: .5em;
+.edit-delete {
   flex: 1;
+  display: flex;
+  gap: .5em;
+  justify-content: end;
+}
+
+.stats {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.study-review {
+  background-color: var(--main);
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.study-review > div {
+  width: 100%;
+  max-width: 12.5em;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.studied {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.number {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.edit,
+.delete {
+  flex: 1;
+  max-width: 12.5em;
 }
 
 .study,
 .review {
-  flex: 1;
-  max-width: 12.5em;
+  width: 100%;
 }
 
 .bottom-buttons:hover {
@@ -95,4 +145,278 @@
 .bottom-buttons img {
   width: 2em;
   height: 2em;
+}
+
+#edit-deck-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .5em;
+}
+
+#edit-deck-form {
+  font-weight: 600;
+}
+
+#edit-deck-form input{
+  width: 100%;
+  padding: .8em;
+  border: 2px solid black;
+  border-radius: .75em;
+  font-size: 1rem;
+}
+
+.cards-list {
+  background-color: var(--main);
+  width: 100%;
+  max-width: 60em;
+}
+
+/* add cards */
+.add-cards {
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: .5em;
+  padding: 1em;
+  justify-content: end;
+  margin-bottom: 1.5em;
+}
+
+.add-cards h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.add-cards button {
+  background-color: rgba(0, 55, 255, 0.5);
+  border: none;
+  border-radius: .5em;
+  padding: 1em 2em;
+  font-size: .8rem;
+  font-weight: 500;
+  color: white;
+  align-self: end;
+  justify-self: flex-start;
+}
+
+.card-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.card-inputs div {
+  flex: 1;
+}
+
+.add-cards label {
+  display: block;
+  margin-bottom: .25em;
+  font-weight: 500;
+}
+
+.add-cards input[type="text"] {
+  width: 100%;
+  border: none;
+  border-radius: .5em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: white;
+  
+}
+
+.add-cards input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* tablesss */
+.hover {
+  opacity: 1;
+}
+
+.dataTables_filter {
+  width: 100%;
+  float: unset;
+}
+
+.dataTables_filter label {
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.dataTables_filter input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  padding: 1em !important;
+  border: none;
+  border-radius: 1em !important;
+  margin: 1em auto;
+}
+
+.dataTables_filter input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.table-wrapper {
+  border-radius: .5em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-wrapper h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#button-col {
+  width: 50px;
+}
+
+#back-delete {
+  display: flex;
+}
+
+.editable {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 1em;
+  border-radius: .5em;
+  flex: 1;
+  text-align: left;
+}
+
+.back-container {
+  text-align: right;
+  display: flex;
+  gap: 1em;
+}
+
+.delete-card-btn {
+  background-color: rgb(186, 73, 73);
+  padding: .5em;
+  border: none;
+  border-radius: .5em;
+}
+
+.delete-card-btn img {
+  width: 2em;
+}
+
+td {
+  vertical-align: top;
+}
+
+td p {
+  margin-bottom: .5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  table-layout: fixed;
+  margin-bottom: 1em !important;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 1rem;
+  width: auto;
+}
+
+.dataTables_info {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dataTables_paginate .paginate_button {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  margin: 0 .1em;
+  cursor: pointer;
+}
+
+.dataTables_paginate .paginate_button {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  border: none !important;
+  transition: 150ms ease;
+}
+
+.dataTables_paginate .current {
+  background: rgb(54, 160, 84) !important;
+  border: none !important;
+}
+
+.dataTables_paginate .paginate_button:hover {
+  background: rgba(54, 160, 84, 0.5) !important;
+}
+
+.dataTables_paginate .previous, .dataTables_paginate .next {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dataTables_paginate .previous:hover, .dataTables_paginate .next:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dataTables_paginate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5em;
+  gap: .5em;
+}
+
+.dataTables_paginate span {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+} 
+
+th.sorting {
+  position: relative;
+  cursor: pointer;
+}
+
+th.sorting::after {
+  content: "⇅";
+  position: absolute;
+  right: 8px;
+  color: #aaa;
+}
+
+th.sorting_asc::after {
+  content: "↑";
+  color: #aaa;
+}
+
+th.sorting_desc::after {
+  content: "↓";
+  color: #aaa;
+}
+
+
+@media (max-width: 650px) {
+  table {
+    table-layout: inherit;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  thead {
+    display: none;
+  }
 }
